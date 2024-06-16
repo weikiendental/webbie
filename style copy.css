@@ -1,0 +1,251 @@
+.html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.body{
+  display:flex;
+  align-items: stretch;
+}
+.fullheight{
+  flex-grow: 1;
+}
+.a{
+  cursor: pointer;
+}
+
+.fullheight{
+  height: 100vh; 
+  border: none; 
+  background-image: url(Assets/Main.png); 
+  background-repeat: no-repeat; 
+  background-size: 100vw 120vh; 
+  background-position: 0px 0vh; 
+  z-index: 0;
+}
+
+.logoDIV{
+  display: flex; 
+  flex-direction: row; 
+  vertical-align: middle; 
+  margin: 0px 20px; 
+  height: 70px; 
+  width: 300px;
+}
+.logo{
+  margin: 10px; 
+  width: 40px; 
+  height: auto;
+}
+.name{
+  font-family: 'outfit', sans-serif; 
+  font-size: 20px;
+  letter-spacing: 2.5px;
+}
+.slogan{
+  font-family: 'outfit', sans-serif; 
+  font-size: 58px; 
+  max-width: 500px; 
+  margin: 44vh 0px 0px 8vw; 
+}
+
+.alowP{
+  position: absolute; 
+  right: 140px; 
+  top: 42px;
+}
+.alow{
+  width: 30px; 
+  height: auto;
+}
+.hint{
+  font-family: 'outfit', sans-serif; 
+  font-size: 20px; 
+  color: #2B4D59; 
+  letter-spacing: 1.5px; 
+  position: absolute; 
+  right: 20px; 
+  top: 70px; 
+  transform: rotate(15deg); 
+  width: auto; 
+  height: 60px;
+}
+.feedDIV{
+  display: flex; 
+  flex-direction: column; 
+  position: absolute; 
+  right: 16px; 
+  bottom: 0px; 
+  width: 100px; 
+  border-radius: 16px; 
+  padding: 6px;  
+}
+.feedQR{
+  padding: 10px; width: 80px; height: auto;
+}
+.feedH1{
+  font-family: 'outfit', sans-serif; 
+  font-size: 18px; 
+  letter-spacing: 1.5px; 
+  text-align: center; 
+  margin: 0px;
+}
+
+.closeBtn{
+  cursor: pointer;
+  font-size: 60px; 
+  position: relative; 
+  right: 0; 
+  font-weight: 100;
+}
+.buttonS{
+  display: flex; 
+  flex-direction: row; 
+  width: 100%; 
+  height: 70px; 
+  vertical-align: middle;
+}
+.longButton1{
+  font-family: 'outfit', sans-serif; 
+  font-size: 20px; 
+  letter-spacing: 1.5px; 
+  padding: 3px 24px; 
+  border-radius: 8px; 
+  border-width: 1px; 
+  border-color: black;
+  cursor: pointer;
+  color: #E5E4DE; 
+  margin-right: 1vw; 
+  height: fit-content; 
+  align-self: center;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+.longButton2{
+  font-family: 'outfit', sans-serif; 
+  font-size: 20px; 
+  letter-spacing: 1.5px; 
+  padding: 3px 24px; 
+  border-radius: 8px; 
+  border-width: 1px; 
+  border-color: black;
+  cursor: pointer;
+  color: #E5E4DE; 
+  margin-right: 1vw; 
+  height: fit-content; 
+  align-self: center;
+}
+.clinicPic{
+  display: flex; 
+  align-items: center; 
+  vertical-align: middle; 
+  justify-content: center; 
+  margin: 40px;
+  flex: 2; 
+  border-right: 1px solid black; 
+  border-left: none; 
+  border-top: none; 
+  border-bottom: none;
+}
+.clinicPicA{
+  height: 60vh; 
+  width: 85%;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  display: flex; 
+  flex-direction: row; 
+  border-radius: 20px; 
+  justify-content: right; 
+  align-items: end;
+}
+.i{
+  height: 40px;
+  width: auto;
+  margin: 10px;
+}
+
+
+
+.servicesDIV{
+  flex: 1; 
+  background-color: transparent; 
+  display: flex; 
+  align-items: left; 
+  flex-direction: column; 
+  padding-top: 50px;
+}
+.servicesH1{
+  font-family: 'outfit', sans-serif; 
+  font-size: 24pt;
+}
+.servicesHP{
+  font-family: 'outfit', sans-serif; 
+  font-size: 12pt; 
+  margin-top: -30px;
+}
+.servicesul{
+  font-family: 'outfit', sans-serif; 
+  font-size: 16pt; 
+  line-height: 44px;
+  padding-left: 40px;        
+}
+
+@media screen and (max-width: 640px) {
+  .fullheight{
+    background-image: none;
+    background-color: #E0E4DE;
+  }
+  .logo{
+    width: 141px;
+    height: 128px;
+    margin: 0px;
+    margin-right: 2px;
+  }
+  .logoDIV{
+    flex-direction: column;
+    align-items: center;
+    width: 96.5vw;
+    margin: 0px;
+  }
+  .name{
+    font-size: 20pt;
+    width: 200px;
+    text-align: center;
+    margin: 0px;
+    margin-top: -10px;
+    letter-spacing: 4px;
+    line-height: 38px;
+  }
+  .slogan{
+    font-size: 22pt;
+    width: 230px;
+    text-align: center;
+    margin: 0px;
+  }
+  .sloganDiv{
+    width: 96.5vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+  }
+  .longButton1{
+    margin-top: 680px;
+    position: inherit;
+  }
+  .alowP{
+    margin-top: 410px;
+    margin-right: 60px;
+  }
+  .hint{
+    margin-top: 410px;
+    margin-right: 60px;
+  }
+  .feedDIV{
+    right: 40vw;
+  }
+}
