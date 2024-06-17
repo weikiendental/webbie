@@ -2,9 +2,6 @@
   margin: 0px;
   background-color: #E0E4DE;
 }
-.a{
-  text-decoration: none;
-}
 .bg{
   display: flex;
   flex-direction: column;
@@ -134,6 +131,7 @@
   margin: 0em 1em;
 }
 .closeBtn{
+  text-decoration: none;
   font-family: 'outfit', sans-serif;
   font-weight: 200;
   border: none;
