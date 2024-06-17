@@ -34,6 +34,7 @@
   column-gap: 1vh;
 }
 .KPButton{
+  text-decoration: none;
   color: black;
   border-radius: 10%;
   border: none;
