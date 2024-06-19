@@ -167,6 +167,7 @@
   background-color: transparent;
   width: 200px;
   height: 800px;
+  pointer-events: auto;
 }
 
 @media (min-aspect-ratio: 1/1) {
