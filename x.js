@@ -175,6 +175,12 @@ function clickRightc() {
   // Round to the nearest card position
   let scrollPositionc = Math.round(newScrollLeftc / cardWidthc - 0.49) * cardWidthc;
 
+  containerc.scrollTo({
+    left: scrollPositionc,
+    top: 0,
+    behavior: "smooth"
+  });
+  
   resetTimer();
 }
 
