@@ -161,6 +161,7 @@
   justify-content: space-between;
 }
 .carolButt{
+  z-index: 300;
   font-size: 144pt;
   border: none;
   background-color: rgba(0, 0, 0, 0.3);
