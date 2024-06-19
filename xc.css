@@ -159,6 +159,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  pointer-events: none;
 }
 .carolButt{
   z-index: 300;
