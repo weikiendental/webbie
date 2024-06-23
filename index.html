@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WeiKien Dental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="x.css">
+    <link rel="stylesheet" href="xc.css">
+    <link rel="stylesheet" href="xfg2.css">
+    <link rel="stylesheet" href="xfg3.css">
+  </head>
+
+  <body>
+    
+    <!--
+    
+    Hello, Welcome to WeiKien Dental Website's Developer Tools
+    
+    -->
+
+    <noscript>
+      <div id="js-disabled-message">
+        <p style="font-weight: bold;">
+        Javascript is DISABLED in your browser. Please ENABLE JavaScript for a better experience.
+        </p>
+        <p>
+          Step-by-step for chrome users: type url "chrome://settings/content/javascript" click "&lt;&gt; Sites can use JavaScript"
+        </p> 
+      </div>
+    </noscript>
+    
+    <div id="bg" class="bg">
+      <div class="logoDiv">
+        <img class="logo" src="Assets/LogoSVG.svg">
+        <p class="company">WEIKIEN DENTAL</p>
+      </div>
+      <div class="sloganDiv">
+        <p class="slogan">Personalized Dental Care For You & Your Family</p>
+      </div>
+      <div class="longButtonDiv">
+        <button id="longButton" class="longButton">Make An Appointment</button>
+        <div class="alowDiv">
+          <img class="alow" src="Assets/Uparrow.svg">
+          <p class="hint">Click Here!</p>
+        </div>
+      </div>
+      <div class="feedDiv">
+        <a href="https://forms.gle/WN9GzQ9mtjD3uhGV6" target="_blank">
+          <img class="feedQR" src="Assets/feedback.png">
+        </a>
+        <p class="feedP">Feedback Form</p>
+      </div>
+    </div>
+
+    <div id="fg" class="fg">
+      <div class="fgHead">
+        <button class="longButton" id="KPTeeButton">Klinik Pergigian Tee</button>
+        <button class="longButton" id="KPTeecareButton" style="background: transparent; color: black; border-color: black;">Klinik Pergigian Teecare</button>
+        <div style="flex: 1;"></div>
+        <button id="closeBtn" class="closeBtn">
+          &times;
+        </button>
+      </div>
+
+      <div id="KPTee" class="KPTee">
+        <div class="clinicPic">
+          <button id="KPT" class="KPT">
+            <img class="clinicPicA" src="Assets/IMG_KPTee.jpg">
+          </button> 
+          <div class="icons">
+            <a href="https://wa.me/60189597888?text=Hello I'd like to make an appointment" target="_blank">
+              <img class="i" src="Assets/WhatsApp.png">
+            </a>
+
+            <a href="https://maps.apple.com/?address=5,%20Jalan%20Wawasan%202/2,%2047160%20Puchong,%20Selangor,%20Malaysia&auid=6738035410269909652&ll=3.032354,101.616883&lsp=9902&q=Tee%20Dental%20Surgery&t=h" target="_blank">
+              <img class="i" src="Assets/Maps.png">
+            </a>
+
+            <a href="https://maps.app.goo.gl/cpw92JURyM7yT28P8" target="_blank">
+              <img class="i" src="Assets/GoogleMaps.svg">
+            </a>
+
+            <a href="https://waze.com/ul/hw2832250s" target="_blank">
+              <img class="i" src="Assets/Waze.png">
+            </a>
+          </div>
+        </div>
+        <div class="carol">
+          <div class='carolCt' id="carolCt">
+            <div class='card'>
+              <!--KPT/KPTC Services, except phone number-->
+              <div class="servicesDIV">
+                <p class="servicesH1">
+                  Services
+                </p>
+                <p class="servicesHP">
+                  Phone Number: +6018-9597888 <br>
+                  <span class="servicesHPs">For price inquiries, please contact us.</span>
+                </p>
+                <ul class="servicesul">
+                  <div class="servicesD">
+                    <p>Consultation &#40;Check-up&#41;</p>
+                    <p>Scaling & Polishing</p>
+                    <p>Dental Filling</p>
+                    <p>Extraction</p>
+                    <p>Minor Oral Surgery</p>
+                    <p>Removable Denture</p>
+                    <p>Crown & Bridge</p>
+                    <p>Root Canal Treatment</p>
+                    <p>Tooth Whitening</p>
+                    <p>Night Guard</p>
+                    <p>Retainer</p>
+                  </div>
+                </ul>
+              </div>            
+            </div>
+            <div class='card'>
+              <!--KPT Operating Hour-->
+              <div class="ohDIV">
+                <h1 class="ohH1">
+                  <span class="ohH1L1">OPERATING</span> <br>
+                  <span class="ohH1L2">HOURS</span>
+                </h1>
+                <p class="ohP1">
+                  <span class="ohPB">MONDAY - SATURDAY</span> <br>
+                  <span class="ohP500">8:30 AM - 5:00 PM</span> <br>
+                </p>
+                <p class="ohP2">
+                  <span class="ohPB">SUNDAY</span> <br>
+                  <span class="ohP500">Closed</span> <br>
+                </p>
+                <p class="ohP3">Please note that the hours may differ on certain holidays.</p>
+              </div>            
+            </div>
+            <div class='card'>
+              <!--KPT Directory-->
+              <div class="directDIV">
+                <p class="directP">
+                  Get Your <span style="font-weight: bold;">Dental Appointment, Direction to Us</span> and <span style="font-weight: bold;">Inquiries</span> by Clicking Here!
+                </p>
+                <button onclick="openKPTfg()" class="directButt">
+                  <p class="directButtT">DIRECTORY</p>
+                  <div class="directI">
+                      <img class="directi" src="Assets/WhatsApp.png">        
+                      <img class="directi" src="Assets/Maps.png">
+                      <img class="directi" src="Assets/GoogleMaps.svg">
+                      <img class="directi" src="Assets/Waze.png">
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class='card'>
+              <!--KPT Map-->
+              <div class="mapDIV">
+                <div class="mapSmall1">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.231867436952!2d101.61688319999999!3d3.0323534999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb4aa8c2e0b6d%3A0x38acb407a738f669!2sTee%20Dental%20Surgery!5e0!3m2!1sen!2smy!4v1718707658498!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mapSmall2">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.231867436952!2d101.61688319999999!3d3.0323534999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb4aa8c2e0b6d%3A0x38acb407a738f669!2sTee%20Dental%20Surgery!5e0!3m2!1sen!2smy!4v1718707658498!5m2!1sen!2smy" width="280" height="210" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="mapP">A Small Map of Our Surroundings</p>
+              </div>            
+            </div>
+          </div>
+          <div class="carolButtDIV">
+            <button onclick="clickLeft()" class="leftButt carolButt"></button>
+            <button onclick="clickRight()" class="rightButt carolButt"></button>  
+          </div>
+        </div>
+      </div>
+
+      <div id="KPTeecare" class="KPTeecare">
+        <div class="clinicPic">
+          <button id="KPTC" class="KPTC">
+            <img class="clinicPicA" src="Assets/IMG_20240607_142314.jpg">
+          </button>
+          <div class="icons">
+            <a href="https://wa.me/60189575888?text=Hello I'd like to make an appointment" target="_blank">
+              <img class="i" src="Assets/WhatsApp.png">
+            </a>
+
+            <a href="https://maps.apple.com/?ll=2.983161,101.667458&q=Dropped%20Pin&t=m" target="_blank">
+              <img class="i" src="Assets/Maps.png">
+            </a>
+
+            <a href="https://maps.app.goo.gl/F2uXWjbk4fLznWFU7" target="_blank">
+              <img class="i" src="Assets/GoogleMaps.svg">
+            </a>
+            
+            <a href="https://waze.com/ul/hw282crpfp" target="_blank">
+              <img class="i" src="Assets/Waze.png">
+            </a>
+          </div>
+        </div>
+        <div class="carol">
+          <div class='carolCt' id="carolCtc">
+            <div class='card'>
+              <!--KPT/KPTC Services, except phone number-->
+              <div class="servicesDIV">
+                <p class="servicesH1">
+                  Services
+                </p>
+                <p class="servicesHP">
+                  Phone Number: +6018-9575888 <br>
+                  <span class="servicesHPs">For price inquiries, please contact us.</span>
+                </p>
+                <ul class="servicesul">
+                  <div class="servicesD">
+                    <p>Consultation &#40;Check-up&#41;</p>
+                    <p>Scaling & Polishing</p>
+                    <p>Dental Filling</p>
+                    <p>Extraction</p>
+                    <p>Minor Oral Surgery</p>
+                    <p>Removable Denture</p>
+                    <p>Crown & Bridge</p>
+                    <p>Root Canal Treatment</p>
+                    <p>Tooth Whitening</p>
+                    <p>Night Guard</p>
+                    <p>Retainer</p>
+                  </div>
+                </ul>
+              </div>            
+            </div>
+            <div class='card'>
+              <!--KPTC Operating Hour-->
+              <div class="ohDIV">
+                <h1 class="ohH1">
+                  <span class="ohH1L1">OPERATING</span> <br>
+                  <span class="ohH1L2">HOURS</span>
+                </h1>
+                <p class="ohP1">
+                  <span class="ohPB">MONDAY - THURSDAY</span> <br>
+                  <span class="ohP500">1:00 PM - 7:00 PM</span> <br>
+                  <span class="ohPB">FRIDAY</span> <br>
+                  <span class="ohP500">5:30 PM - 8:30 PM</span> <br>
+                </p>
+                <p class="ohP2">
+                  <span class="ohPB">SATURDAY - SUNDAY</span> <br>
+                  <span class="ohP500">9:30 AM - 8:30 PM</span> <br>
+                </p>
+                <p class="ohP3">Please note that the hours may differ on certain holidays.</p>
+              </div>
+            </div>
+            <div class='card'>
+              <!--KPT Directory-->
+              <div class="directDIV">
+                <p class="directP">
+                  Get Your <span style="font-weight: bold;">Dental Appointment, Direction to Us</span> and <span style="font-weight: bold;">Inquiries</span> by Clicking Here!
+                </p>
+                <button onclick="openKPTCfg()" class="directButt">
+                  <p class="directButtT">DIRECTORY</p>
+                  <div class="directI">
+                      <img class="directi" src="Assets/WhatsApp.png">        
+                      <img class="directi" src="Assets/Maps.png">
+                      <img class="directi" src="Assets/GoogleMaps.svg">
+                      <img class="directi" src="Assets/Waze.png">
+                  </div>
+                </button>
+              </div>
+            </div>            
+            <div class='card'>
+              <!--KPTC Map-->
+              <div class="mapDIV">
+                <div class="mapSmall1">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.411866566962!2d101.66746300000001!3d2.9830901000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb57334763da5%3A0x8b9af2b3182e9311!2sKlinik%20Pergigian%20Teecare!5e0!3m2!1sen!2smy!4v1718707791880!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                </div>
+                <div class="mapSmall2">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.411866566962!2d101.66746300000001!3d2.9830901000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb57334763da5%3A0x8b9af2b3182e9311!2sKlinik%20Pergigian%20Teecare!5e0!3m2!1sen!2smy!4v1718707791880!5m2!1sen!2smy" width="280" height="210" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                </div>
+                <p class="mapP">A Small Map of Our Surroundings</p>
+              </div>
+            </div>
+          </div>
+          <div class="carolButtDIV">
+            <button onclick="clickLeftc()" class="leftButt carolButt"></button>
+            <button onclick="clickRightc()" class="rightButt carolButt"></button>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="KPTfg" class="KPTfg" style="display: none;">
+      <div class="KPh">
+        <h1 class="KPh1">Klinik Pergigian Tee</h1>
+        <h2 class="KPh2"> DIRECTORY</h2>
+      </div>
+      <div class="KPdiv">
+        <button onclick="window.open(encodeURI(urlwa1), '_blank')" class="KPButton">
+          <img class="i2" src="Assets/WhatsApp.png">
+          <p class="KPp">WhatsApp</p>
+          <p class="KPpxs">&#40;For Appointments & Inquiries&#41;</p>
+        </button>
+        <button onclick="window.open('https://maps.apple.com/?address=5,%20Jalan%20Wawasan%202/2,%2047160%20Puchong,%20Selangor,%20Malaysia&auid=6738035410269909652&ll=3.032354,101.616883&lsp=9902&q=Tee%20Dental%20Surgery&t=h', '_blank')" class="KPButton">
+          <img class="i2" src="Assets/Maps.png">
+          <p class="KPp">Apple Maps</p>
+        </button>
+        <button onclick="window.open('https://maps.app.goo.gl/cpw92JURyM7yT28P8', '_blank')" class="KPButton">
+          <img class="i2" src="Assets/GoogleMaps.svg">
+          <p class="KPp">Google Maps</p>
+        </button>
+        <button onclick="window.open('https://waze.com/ul/hw2832250s', '_blank')" class="KPButton">
+          <img class="i2" src="Assets/Waze.png">
+          <p class="KPp">Waze</p>
+        </button>
+        <button id="KPTj" class="KPButton">
+          <p class="KPp">About Us</p>
+        </button>
+        <button id="KPTBack" class="KPButton">
+          <p class="KPp">Back</p>
+        </button>
+      </div>
+    </div>
+
+    <div id="KPTCfg" class="KPTCfg" style="display: none;">
+      <div class="KPh">
+        <h1 class="KPh1">Klinik Pergigian Teecare</h1>
+        <h2 class="KPh2">DIRECTORY</h2>
+      </div>
+      <div class="KPdiv">
+        <button onclick="window.open(encodeURI(urlwa2), '_blank')" class="KPButton">
+          <img class="i2" src="Assets/WhatsApp.png">
+          <p class="KPp">WhatsApp</p>
+          <p class="KPpxs">&#40;For Appointments & Inquiries&#41;</p>
+        </button>
+        <button onclick="window.open('https://maps.apple.com/?ll=2.983161,101.667458&q=Dropped%20Pin&t=m', '_blank')" class="KPButton">
+          <img class="i2" src="Assets/Maps.png">
+          <p class="KPp">Apple Maps</p>
+        </button>
+        <button onclick="window.open('https://maps.app.goo.gl/F2uXWjbk4fLznWFU7', '_blank')" class="KPButton">
+          <img class="i2" src="Assets/GoogleMaps.svg">
+          <p class="KPp">Google Maps</p>
+        </button>
+        <button onclick="window.open('https://waze.com/ul/hw282crpfp', '_blank')" class="KPButton">
+          <img class="i2" src="Assets/Waze.png">
+          <p class="KPp">Waze</p>
+        </button>
+        <button id="KPTCj" class="KPButton">
+          <p class="KPp">About Us</p>
+        </button>
+        <button id="KPTCBack" class="KPButton">
+          <p class="KPp">Back</p>
+        </button>
+      </div>
+    </div>
+
+    <div id="KPTabt" class="KPTabt" style="display: none;">
+      <div class="KPabth">
+        <h1 class="KPabth1">Klinik Pergigian Tee</h1>
+        <h2 class="KPabth2">About Us</h2>
+        <div class="Butt">
+          <button id="KPTabtBack" class="KPabtButton">
+            <p class="KPabtBp">Back</p>
+          </button>
+        </div>
+      </div>
+      <p class="KPabtp">
+        Operating Hours: Mon-Sat, 08:30-17:00
+        <br>
+        <br>
+        Dr. Tee Hui Kien started this clinic on Jun-2000, at one of the shoplots in Jalan Bandar 1, Pusat Bandar Puchong. <br>
+         <br>
+        After 12 years of 6-days-a-week hardwork, this clinic has been upgraded and moved to a 5th floor in SetiaWalk, an open-air mall next door. Although it is slightly tougher to reach, but the Genting Highland's view makes the climb worth.
+        <br>
+        <br>
+        This clinic has been providing quality dental care to the Puchong community for more than 20 years. <br>
+        <br>
+      </p>
+    </div>
+
+    <div id="KPTCabt" class="KPTCabt" style="display: none;">
+      <div class="KPabth">
+        <h1 class="KPabth1">Klinik Pergigian Teecare</h1>
+        <h2 class="KPabth2">About Us</h2>
+        <div class="Butt">
+          <button id="KPTCabtBack" class="KPabtButton">
+            <p class="KPabtBp">Back</p>
+          </button>
+        </div>
+      </div>
+      <p class="KPabtp">
+        Operating Hours: <br>Mon-Thu, 13:00-19:00;<br> Fri, 17:30-20:30; <br> Sat-Sun, 09:30-20:30
+        <br>
+        <br>
+        After 24 years since the first clinic opened, our new clinic in Seri Kembangan celebrates its official birthday on <b>Thu, 13 Jun 2024</b>, with the warm welcome of our first four lovely customers on its inaugural day.
+      </p>
+
+    </div>
+
+    <script src="x.js"></script>
+  </body>
+</html>
